@@ -8,6 +8,12 @@ from datetime import *
 
 
 def process_song_file(cur, filepath):
+
+    """
+    - Function to read songs metadata (song_data.json)
+    - Column selection to insert data into artists and songs tables (dimension tables)
+    """
+
     # open song file
     df = pd.read_json(filepath, lines=True)
 
@@ -21,6 +27,12 @@ def process_song_file(cur, filepath):
 
 
 def process_log_file(cur, filepath):
+
+    """
+    - Function to read app logs (log_data.json)
+    - Column selection to insert data into users, time (dimensions table) and songplays (fact table)
+    
+    """
     # open log file
     df = pd.read_json(filepath, lines=True)
 
