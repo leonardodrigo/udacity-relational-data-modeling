@@ -22,5 +22,5 @@ Now, we can start building our model. Running ```create_tables.py``` we are goin
 
 A query in ```elt.py``` collects song and artist id from the songs and artists tables and combines this with log JSON file derived data to insert into songplays table. Below we can check the diagram that represents tables relashionship.
 
-![er_songplays](https://user-images.githubusercontent.com/49285727/198901763-72f15d1e-5b17-499f-86bf-bc7dfc409d30.png)
+![Entity Relationship Diagram (1)](https://user-images.githubusercontent.com/49285727/198901861-3191a9c1-962b-4a5f-8a01-27f1995dca21.jpg)
 
