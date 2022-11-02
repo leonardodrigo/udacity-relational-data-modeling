@@ -6,7 +6,7 @@ In this project, the main objective is to create a simple relational data model 
 ## How to run the scripts
 First of all, you must have [Python](https://www.python.org/downloads/) and a [PostgreSQL](https://www.postgresql.org/download/) database instance configured in your machine. The others Python packages can be installed running the command below:
 
-``` pip install requirements.txt ```
+``` pip install -r requirements.txt ```
 
 Now, we can start building our model. Running ```create_tables.py``` we are going to create a locally new database called *sparkifydb* and all the tables described in the next sessions using ```sql_queries.py```. With them, the next step is to run ```etl.py``` to read json files (song_data and log_data), process data and write into the tables. If you prefer, you can run ```etl.ipynb```, which has the same code as .py one, to see step by step what is going on with the ETL task.
 
